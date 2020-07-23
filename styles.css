@@ -1,0 +1,291 @@
+* {
+  padding:0;
+  margin: 0;
+}
+body {
+  font-size: 18px;
+  font-family: "Open Sans";
+  font-weight: 400;
+}
+
+
+/*============================================LAYOUT============================================================================*/
+
+.header1,.header2 {
+  display:flex;
+  justify-content:space-between;
+  align-items: center;
+}
+.maincontent_child {
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.maincontent_child:nth-child(even) .maincontent_child_text{
+  order:2;
+}
+.maincontent_child_text, .maincontent_child_img {
+  flex-basis: 50%;
+}
+.topfooter {
+  display: flex;
+  flex-direction: column;
+}
+.topfootergrid {
+  display: flex;
+  justify-content:space-between;
+}
+.col1 {
+  flex-basis:35%;
+  display: grid;
+  grid-template-columns: 1fr 15fr;
+}
+
+
+/* ====================== SIZE, SPACE  AND POSITION SPECIFICATIONS ============================================================ */
+
+.topfooter .huddle {
+    margin-bottom: 1em;
+}
+.header1 button{
+  padding: 1em 2em;
+  }
+  .header2 button {
+  padding: 1em 4em;
+}
+.header{
+  padding:2em 4em;
+}
+
+.header1 > *, .header2 > * {
+  margin: 1.5em 1em;
+}
+.header2_left p {
+  margin: 2em 0;
+}
+.maincontent {
+  width:85%;
+  margin:8em auto auto auto;
+  padding-bottom: 1em;
+}
+.maincontent_child {
+  padding: 1em 0;
+  margin: 3em 0;
+}
+
+.maincontent_child_text{
+  padding:0 5em 0 5em;
+}
+.maincontent_child_text h2 {
+  margin-bottom: 1em;
+}
+.maincontent:last-child {
+  margin-bottom: 10em;
+}
+.relativeposbox{
+    margin-top:10em;
+    padding-top:5em;
+}
+.absoluteposbox {
+  width:50%;
+  position: relative;
+  margin-top:-13em;
+  margin-left:25%;
+  z-index: 2;
+}
+
+.absoluteposbox button{
+padding: 1.5em 4em;
+margin-bottom:2em;
+}
+.absoluteposbox h3 {
+  padding: 2em 0.3em;
+}
+.topfooter {
+  padding: 8em 8em 4em 8em;
+}
+.fa {
+  padding: 7px;
+  width: 17px;
+  margin: 5px 2px;
+}
+.col1 > * {
+  margin: 1em 0;
+}
+.col1 img {
+  padding-right:1em;
+}
+.col2 > * , .col3 > * {
+  padding:0.9em 0;
+}
+.topfooter .copy {
+  padding:1em 0;
+}
+
+/*=========================================SPECIFICATIONS=======================================================================*/
+
+.header {
+  background-image: url("./huddle-landing-page-with-alternating-feature-blocks-master/images/bg-hero-desktop.svg");
+  background-color:  hsl(193, 100%, 96%);
+}
+button:focus {
+  outline: none;
+}
+
+/* ================================== Image SPECIFICATIONS =================================================================== */
+
+.header1 img {
+  width:10em;
+}
+.header2_right img{
+  width:48vw;
+}
+.topfooter .huddle {
+  width:14em;
+  filter: brightness(0) invert(1);
+}
+.maincontent_child_img img {
+  width:40vw;
+}
+.topfooter img {
+  width:15px;
+}
+
+/* ======================================== Other SPECIFICATIONS ============================================================== */
+
+h1,h2 {
+  font-family: Poppins;
+  text-shadow: 0px 0.02em, 0.02em 0px, 0.02em 0px;
+}
+h3 {
+  text-shadow: 0px 0.01em, 0.01em 0px, 0.01em 0px;
+}
+.header2_left h1 {
+  letter-spacing: 0.02em;
+  line-height: 1.5em;
+  text-shadow: 0px 0.03em, 0.03em 0px, 0.03em 0px;
+}
+.header1 button {
+  background-color: #fff;
+  font-weight: 900;
+  border:none;
+  border-radius:3em;
+  box-shadow:0 0 10px 1px #eee;
+}
+.header1 button:hover {
+  background-color:purple;
+  color:#fff;
+}
+.header2_left button, .absoluteposbox button {
+  background-color: hsl(322, 100%, 66%);
+  color:#fff;
+  font-weight: 900;
+  border:none;
+  border-radius:3em;
+  box-shadow:0 0 10px 1px #eee;
+}
+.header2_left button:hover, .absoluteposbox button:hover {
+  background-color:purple;
+  color: #fff
+}
+.maincontent_child {
+  border-radius: 1em;
+  box-shadow:0 0 10px 1px #eee;
+}
+.maincontent_child_text p {
+  color:hsl(208, 11%, 55%);
+}
+.relativeposbox{
+    background-color:hsl(192, 100%, 9%);
+}
+
+.absoluteposbox {
+  text-align: center;
+  box-shadow:0 0 1.5px 2px #eee;
+  background-color: white;
+  border-radius: 1em;
+}
+
+.topfooter {
+  background-color:hsl(192, 100%, 9%);
+  color:#eee;
+  font-size: 14px;
+  font-weight:100;
+}
+.fa {
+  color:#eee;
+  border-radius: 50%;
+  border: white 1px solid;
+  text-align: center;
+  text-decoration: none;
+}
+.col1 > * {
+  align-self: center;
+}
+.col1 img {
+  justify-self:start;
+}
+.topfooter .copy {
+  text-align: right;
+  font-size: 0.7rem;
+}
+.attribution {
+    background-color: #eee;
+    font-size:0.8em;
+    text-align: center;
+}
+.attribution a {
+    color: red;
+}
+
+/* ===================== MEDIA QUERIES ======================================================================================= */
+
+@media (max-width: 500px) {
+  body {
+    font-size: 14px;
+  }
+  .header {
+    background:url("./huddle-landing-page-with-alternating-feature-blocks-master/images/bg-hero-mobile.svg");
+    background-color:  hsl(193, 100%, 96%);
+    padding:1em;
+  }
+  .header2, .maincontent_child, .topfootergrid {
+    flex-direction: column;
+  }
+  .maincontent_child {
+    padding:1.5em 0;
+  }
+  .maincontent_child_text {
+    margin-top: 2em;
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+  .maincontent_child .maincontent_child_text{
+    order:2;
+  }
+  .header1 img {
+    width:35%;
+  }
+  .header2_right img {
+    width:90vw;
+  }
+  .header > * , .maincontent > * , .social, .topfooter .copy  {
+    text-align:center;
+  }
+  .maincontent_child_img img {
+    width:50vw;
+  }
+  .absoluteposbox {
+    width:80%;
+    margin-left: 10%;
+  }
+  .col3,.col2 {
+    margin-top:1.5em;
+  }
+  .topfooter {
+    padding: 8em 1.5em 4em 1.5em;
+  }
+  .social {
+    margin-top: 2em;
+  }
+}
