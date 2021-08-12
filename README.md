@@ -5,9 +5,9 @@
 ![image](https://user-images.githubusercontent.com/62956111/129143627-cf289fcf-b2aa-4687-9a55-bc3b601ea36b.png)
 
 
-## Details of the challenge(hosted by [Frontend Mentor](https://www.frontendmentor.io/challenges/huddle-landing-page-with-alternating-feature-blocks-5ca5f5981e82137ec91a5100)):
+## Details of the challenge(hosted by [Frontend Mentor](https://www.frontendmentor.io)):
 
-[Challenge link](https://www.frontendmentor.io/challenges/intro-component-with-signup-form-5cf91bd49edda32581d28fd1) 
+[Challenge link](https://www.frontendmentor.io/challenges/challenges/huddle-landing-page-with-alternating-feature-blocks-5ca5f5981e82137ec91a5100) 
 
 [Challenge details](challenge_details)
 
